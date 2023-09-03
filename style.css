@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "font";
+    src: url("HyundaiSansHeadKRMedium\ \(1\).ttf");
+    font-weight: 999;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "font";
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* font-family: poppins; */
+    background-image: url("https://d779j7urowt81.cloudfront.net/assets/card_1.4ca783ec.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    transition: all ease .2s;
+
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    /* height: 80px; */
+    margin: 30px 0px;
+    padding: 0px 60px;
+    padding-top: 50px;
+    color: white;
+}
+#nav #mid{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 14px;
+    text-align: center;
+    
+}
+#mid h2{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+#nav #right{
+    display: flex;
+    gap: 8px;
+    font-size: 28px;
+}
+#nav>h2{
+    font-size: 28px;
+}
+#page1 #cards{
+    height: 60%;
+    /* border: 2px solid rgb(62, 38, 38); */
+    /* background-color: rgba(16, 15, 15, 0.238); */
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    /* margin-left: 0px; */
+    
+  /* overflow-x: auto; */
+overflow-y: visible;    
+transition: all ease .5s;
+transform: translateX(-300px);
+
+}
+#page1 #cards::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    flex-shrink: 0;
+    position: relative;
+    background-color: transparent;
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid black; */
+    border-radius: 20px ;
+    overflow: hidden;
+     transition: all ease .3s;
+     /* rotate: -20deg; */
+     transform: translateX(0px);
+}
+
+.card:hover{
+    cursor: pointer;
+    
+}
+
+.card video{
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+}
+.card #content{
+ padding: 40px 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+    color: white;
+}
+.card #content h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.card #content h1{
+    font-size: 32px;
+    margin-bottom: 18px;
+
+}
+.card #content i{
+ 
+    font-size: 22px;
+   border: 2px solid rgba(255, 250, 250, 0.721);
+   padding: 7px;
+   background-color: transparent;
+   border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all ease .2s;
+}
+
+#controls{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+#controls i{
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.333);
+    border-radius: 50%;
+    font-weight: 999;
+    transform: all ease .1s;
+}
+#controls i:hover{
+    /* border: none; */
+    background-color: rgb(252, 251, 251);
+    color: black;
+    cursor: pointer;
+}
+ #dots{
+    display: flex;
+    justify-content: center;
+gap: 3px;
+font-size: 25px;
+font-weight: 999;
+color: rgba(255, 255, 255, 0.32);
+}
+#dots h1:nth-child(2){
+    color: white;
+}
+#footer{
+    background-color: rgb(42, 36, 36);
+    color: rgb(178, 157, 157);
+
+}
+#footernav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px  50px;
+    background-color: rgb(42, 36, 36);
+    padding-top: 30px;
+}
+#footernav #left{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all ease .1s;
+}
+#footernav #left h3:hover{
+    color: white;
+    cursor: pointer;
+}
+#footernav #right i:hover{
+    color: white;
+    cursor: pointer;
+}
+#footernav #left img{
+    height: 40px;
+    margin-right: 10px;
+}
+#footernav #right{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center; 
+    gap: 14px;
+    transition: all ease .1s;
+
+}
+#footer p{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px 140px;
+}
+#footer h6{
+    font-size: 13px;
+    padding: 5px 140px;
+    padding-bottom: 30px;
+}
